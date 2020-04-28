@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
-@import "./components/header/header";
 @import"sass/reset";
-
+@import "./components/header/header";
+@import "./components/content/content";
 .wrapper {
   max-width: 1200px;
   margin: auto;

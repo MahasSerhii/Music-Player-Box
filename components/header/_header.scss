@@ -7,9 +7,9 @@
 .hr{
     width: 67px;
     height: 0px;
-opacity: 0.05;
-border: 1px solid #0F1E36;
-transform: rotate(90deg);
+    opacity: 0.05;
+    border: 1px solid #0F1E36;
+    transform: rotate(90deg);
 }
 .logo{
     padding: 0px 20px;
@@ -90,7 +90,7 @@ form{
 }
 .photo{
 flex: 1;
-min-width: 17px;
+min-width: 50px;
 margin-right: 14px;
 }
 .photo img{
