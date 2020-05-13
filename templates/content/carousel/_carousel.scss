@@ -1,0 +1,35 @@
+.podcast{
+  font-family: 'Source Sans Pro', sans-serif;
+  padding-bottom: 20px;
+  margin-left: 20px;
+  font-weight: bolder;
+}
+.artist{
+font-family: 'Source Sans Pro', sans-serif;
+}
+.artist .slick-slide {
+    margin: 0px 20px;
+    cursor: pointer;
+
+  } 
+.songName{
+font-size: 12px;
+line-height: 16px;
+padding-top: 8px;
+}
+.artistName{
+font-size: 10px;
+line-height: 24px;
+color: #0F1E36;
+mix-blend-mode: normal;
+padding-top: 4px;
+opacity: 0.7;
+}
+.song-card:hover>img{
+position: relative;
+width: 100%;
+top: 5px;
+}
+.artist p:hover{
+  color: #3E2AD1;
+}

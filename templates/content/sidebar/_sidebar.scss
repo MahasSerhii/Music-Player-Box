@@ -1,0 +1,161 @@
+.sidebarWrapper {
+  position: relative;
+  min-height: 100%;
+  min-width: 167px;
+  margin-top: 67px;
+}
+.leftSide {
+  padding: 0px 32px 0px 23px;
+}
+.rightBorder {
+  position: absolute;
+  width: 1px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.05;
+  border: 1px solid #0f1e36;
+}
+#verticalMenu {
+  font-family: "Source Sans Pro", sans-serif;
+  display: block;
+  margin-top: 43px;
+  font-size: 12px;
+  font-weight: 800;
+  max-width: 170px;
+}
+.smallMenu,
+.myTracks,
+.playList {
+  line-height: 41px;
+}
+.smallMenu.first {
+  background: url(/images/Discover.png);
+}
+.smallMenu.second {
+  background: url(/images/Albums.png);
+}
+.smallMenu.third {
+  background: url(/images/Artists.png);
+}
+.smallMenu.forth {
+  background: url(/images/YouTube.png);
+}
+.myTracksmenu.second {
+  background: url(/images/Favourite.png);
+}
+.myTracksmenu.third {
+  background: url(/images/RecentHistory.png);
+}
+.myTracksmenu.forth {
+  background: url(/images/DownloadItems.png);
+}
+.myTracksmenu.fifth {
+  background: url(/images/LocalFiles.png);
+}
+.playList.second,
+.playList.third,
+.playList.forth,
+.playList.fifth {
+  background: url(/images/Add.png);
+}
+.smallMenu.first,
+.smallMenu.second,
+.smallMenu.third,
+.smallMenu.forth,
+.myTracksmenu.second,
+.myTracksmenu.third,
+.myTracksmenu.forth,
+.myTracksmenu.fifth,
+.playList.second,
+.playList.third,
+.playList.forth,
+.playList.fifth {
+  background-repeat: no-repeat;
+  background-position-y: 12px;
+}
+.smallMenu.first:hover {
+  background: url(/images/Discover-on.png);
+}
+.smallMenu.second:hover {
+  background: url(/images/Albums-on.png);
+}
+.smallMenu.third:hover {
+  background: url(/images/Artists-on.png);
+}
+.smallMenu.forth:hover {
+  background: url(/images/Youtube-on.png);
+}
+.myTracksmenu.second:hover {
+  background: url(/images/Favourite-on.png);
+}
+.myTracksmenu.third:hover {
+  background: url(/images/RecentHistory-on.png);
+}
+.myTracksmenu.forth:hover {
+  background: url(/images/DownloadItems-on.png);
+}
+.myTracksmenu.fifth:hover {
+  background: url(/images/LocalFiles-on.png);
+}
+.playList.second:hover,
+.playList.third:hover,
+.playList.forth:hover,
+.playList.fifth:hover {
+  background: url(/images/PlayList-on.png);
+}
+.smallMenu.first:hover,
+.smallMenu.second:hover,
+.smallMenu.third:hover,
+.smallMenu.forth:hover,
+.myTracksmenu.second:hover,
+.myTracksmenu.third:hover,
+.myTracksmenu.forth:hover,
+.myTracksmenu.fifth:hover,
+.playList.second:hover,
+.playList.third:hover,
+.playList.forth:hover,
+.playList.fifth:hover {
+  background-repeat: no-repeat;
+  background-position-y: 12px;
+}
+.smallMenu span,
+.myTracks span,
+.playList span {
+  color: #0f1e36;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  padding-left: 30px;
+}
+.smallMenu :hover,
+.myTracksmenu :hover,
+.playList :hover {
+  color: #3e2ad1;
+  opacity: 1;
+}
+#verticalMenu .myTracks li a .bold-menu,
+#verticalMenu {
+  padding: 0;
+  color: black;
+  opacity: 1;
+}
+.playListAdd {
+  line-height: 35px;
+  display: flex;
+  max-width: 150px;
+}
+.bold-menu {
+  flex: 9;
+}
+.addBtn {
+  background: url(/images/Plus.png);
+  background-repeat: no-repeat;
+  background-position-y: 11px;
+  flex: 2;
+}
+.addBtn:hover {
+  background: url(/images/Plus-on.png);
+  background-repeat: no-repeat;
+  background-position-y: 11px;
+  cursor: cell;
+}

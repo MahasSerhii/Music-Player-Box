@@ -1,0 +1,17 @@
+@import "./templates/content/sidebar/sidebar";
+@import "./slider/slider";
+@import "./carousel/carousel";
+@import "./playlist/playlist";
+@import "./player/playerbar";
+
+.content-conteiner {
+  display: flex;
+  min-width: 1024px;
+}
+.main-wrapper {
+  background-color: #f3f9ff;
+  opacity: 1;
+  max-width: 857px;
+  min-height: 100%;
+  margin-top: 67px;
+}

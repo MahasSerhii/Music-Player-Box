@@ -1,9 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
-@import"sass/reset";
-@import "./components/header/header";
-@import "./components/content/content";
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+@import "reset";
+@import "common";
+@import "../templates/header/header";
+@import "../templates/content/content";
+@import "./node_modules/slick-carousel/slick/slick.scss";
+@import "./node_modules/slick-carousel/slick/slick-theme.scss";
+@import "mobile";
+
 .wrapper {
-  max-width: 1200px;
+  max-width: 1024px;
+  padding: 0px;
   margin: auto;
 }
-
