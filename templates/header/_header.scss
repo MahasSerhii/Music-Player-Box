@@ -1,0 +1,155 @@
+.headerWrapper {
+  display: flex;
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: #ffffff;
+  opacity: 0.9;
+  position: fixed;
+  z-index: 500;
+}
+.header {
+  display: grid;
+  align-items: center;
+  height: 67px;
+  grid-template-columns: 164px 349px 1px 87px 1px 87px 1px 87px 1px 246px;
+}
+.burger-menu {
+  display: none;
+}
+.logo {
+  margin-left: 20px;
+  cursor: pointer;
+}
+.hr {
+  min-height: 100%;
+  opacity: 0.05;
+  border: 1px solid #0f1e36;
+}
+form {
+  display: flex;
+}
+.searchbar {
+  padding: 0px 20px;
+  line-height: 30px;
+}
+.searchbar input {
+  width: 100%;
+  height: 30px;
+  order: 2;
+}
+.searchbar button {
+  cursor: pointer;
+  padding-right: 10px;
+  padding-top: 5px;
+}
+.searchbar button:before {
+  content: url(/images/Serch.png);
+}
+.searchbar button:hover {
+  transform: scale(0.8);
+}
+.tv-chanel {
+  display: flex;
+  padding: 0px 20px;
+  line-height: 30px;
+  justify-content: center;
+}
+.radio-chanel {
+  display: flex;
+  padding: 0px 20px;
+  line-height: 50px;
+  justify-content: center;
+}
+.notificatiom {
+  display: flex;
+  padding: 0px 20px;
+  line-height: 50px;
+  justify-content: center;
+}
+.account {
+  display: flex;
+  align-items: center;
+  padding: 0px 20px;
+}
+
+.account-info p {
+  font-size: 12px;
+  line-height: 16px;
+}
+.account-status {
+  display: flex;
+}
+.account-status p {
+  font-size: 10px;
+  line-height: 16px;
+  color: #3e2ad1;
+  padding: 0;
+}
+.status-crown {
+  padding-right: 5px;
+  align-self: center;
+}
+.photo {
+  flex: 1;
+  min-width: 50px;
+  margin-right: 14px;
+}
+.photo img {
+  max-width: 100%;
+}
+.account-info {
+  flex: 4;
+}
+.account-info a p {
+  color: black;
+  font-weight: bold;
+}
+.account-info a .statusInfo {
+  color: #3e2ad1;
+}
+.tv-chanel,
+.radio-chanel,
+.notificatiom {
+  padding: 15px 10px;
+}
+.tv-chanel {
+  padding: 10px;
+  background: url(../images/TV.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+.tv-chanel:hover {
+  padding: 10px;
+  background: url(../images/TV-on.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: scale(0.9);
+}
+.radio-chanel {
+  padding: 10px;
+  background: url(../images/Radio.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+.radio-chanel:hover {
+  padding: 10px;
+  background: url(../images/Radio-on.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: scale(0.9);
+}
+.notificatiom {
+  padding: 15px 10px;
+  background: url(../images/Bell.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+.notificatiom:hover {
+  padding: 15px 10px;
+  background: url(../images/Bell-on.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: scale(0.9);
+}

@@ -1,0 +1,245 @@
+@media screen and (max-width: 1024px) {
+  .sidebarWrapper {
+    display: none;
+  }
+  .main-wrapper {
+    background-color: #f3f9ff;
+    opacity: 1;
+    max-width: 100%;
+    min-height: 100%;
+    margin-top: 67px;
+  }
+  .header {
+    grid-template-columns: 137px 140px 247px 1px 87px 1px 87px 1px 87px 1px 235px;
+  }
+  .burger-menu {
+    position: relative;
+    width: 100%;
+  }
+  .burger-menu {
+    display: block;
+    margin-left: 23px;
+    position: relative;
+    width: 100%;
+    height: 40px;
+  }
+  #header-burger {
+    display: none;
+  }
+  .forHeaderBurger {
+    display: block;
+    position: absolute;
+    line-height: 30px;
+    height: 35px;
+    width: 35px;
+    left: 10px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 10;
+  }
+  .burger-first-line {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    background-color: #f51e38;
+    width: 35px;
+    height: 3px;
+    transition: 0.5s all;
+  }
+  .burger-second-line {
+    position: absolute;
+    left: 10px;
+    top: 20px;
+    background-color: #f51e38;
+    width: 35px;
+    height: 3px;
+    transition: 0.5s all;
+  }
+  .burger-third-line {
+    position: absolute;
+    left: 10px;
+    top: 20px;
+    background-color: #f51e38;
+    width: 35px;
+    height: 3px;
+    transition: 0.5s all;
+  }
+  .burger-forth-line {
+    position: absolute;
+    left: 10px;
+    top: 30px;
+    background-color: #f51e38;
+    width: 30px;
+    height: 3px;
+    transition: 0.5s all;
+  }
+  .header-burger-menu {
+    display: block;
+    position: fixed;
+    top: 15px;
+    left: 0;
+    transform: translateY(55px);
+    background-color: #f51e38;
+    max-height: 0;
+    font-size: 0;
+    padding-left: 23px;
+    padding-right: 10px;
+    overflow: hidden;
+    transition: 0.5s all;
+    color: white;
+  }
+  #header-burger:checked ~ .header-burger-menu {
+    max-height: 590px;
+    font-size: 15px;
+  }
+  #header-burger:checked ~ .burger-first-line {
+    display: none;
+  }
+  #header-burger:checked ~ .burger-second-line {
+    transform: rotate(45deg);
+  }
+  #header-burger:checked ~ .burger-third-line {
+    transform: rotate(-45deg);
+  }
+  #header-burger:checked ~ .burger-forth-line {
+    display: none;
+  }
+  .smallMenu :hover,
+  .myTracksmenu :hover,
+  .playList :hover {
+    color: white;
+    opacity: 1;
+  }
+  .smallMenu span,
+  .myTracks span,
+  .playList span {
+    color: white;
+    opacity: 0.8;
+  }
+  .smallMenu,
+  .myTracks,
+  .playList {
+    line-height: 31px;
+  }
+  .playList .fifth {
+    padding-bottom: 30px;
+  }
+  .smallMenu.first:hover {
+    background: url(../images/DiscoverW.png);
+  }
+  .smallMenu.second:hover {
+    background: url(../images/AlbumsW.png);
+  }
+  .smallMenu.third:hover {
+    background: url(../images/ArtistsW.png);
+  }
+  .smallMenu.forth:hover {
+    background: url(../images/YoutubeW.png);
+  }
+  .myTracksmenu.second:hover {
+    background: url(../images/FavouriteW.png);
+  }
+  .myTracksmenu.third:hover {
+    background: url(../images/RecentHistoryW.png);
+  }
+  .myTracksmenu.forth:hover {
+    background: url(../images/DownloadItemsW.png);
+  }
+  .myTracksmenu.fifth:hover {
+    background: url(../images/LocalFilesW.png);
+  }
+  .playList.second:hover,
+  .playList.third:hover,
+  .playList.forth:hover,
+  .playList.fifth:hover {
+    background: url(../images/AddW.png);
+  }
+  .smallMenu.first:hover,
+  .smallMenu.second:hover,
+  .smallMenu.third:hover,
+  .smallMenu.forth:hover,
+  .myTracksmenu.second:hover,
+  .myTracksmenu.third:hover,
+  .myTracksmenu.forth:hover,
+  .myTracksmenu.fifth:hover,
+  .playList.second:hover,
+  .playList.third:hover,
+  .playList.forth:hover,
+  .playList.fifth:hover {
+    background-repeat: no-repeat;
+    background-position-y: 12px;
+  }
+  .addBtn:hover {
+    background: url(../images/PlusW.png);
+    background-repeat: no-repeat;
+    background-position-y: 11px;
+    cursor: cell;
+  }
+}
+@media screen and (max-width: 500px) {
+  .logo,
+  .searchbar,
+  .header .hr,
+  .tv-chanel,
+  .radio-chanel,
+  .notificatiom,
+  .account {
+    display: none;
+  }
+  .header {
+    position: relative;
+    display: grid;
+    bottom: -20px;
+    left: -15px;
+  }
+  .headerWrapper {
+    max-width: 0;
+  }
+  .burger-first-line,
+  .burger-second-line,
+  .burger-third-line,
+  .burger-forth-line {
+    background-color: #ffffff;
+    height: 2px;
+    border-radius: 40%;
+  }
+  .burger-forth-line {
+    width: 20px;
+  }
+  .main-wrapper {
+    margin-top: 0px;
+  }
+  .wrapper {
+    max-width: 500px;
+    min-width: 350px;
+    overflow: hidden;
+  }
+  .slick-slide img {
+    width: 70%;
+  }
+  .my-dots {
+    display: none;
+  }
+  .playBanner,
+  .playBanner:hover {
+    margin-top: 17px;
+  }
+  .shareBanner {
+    top: 119px;
+    padding: 7px;
+  }
+  .playlistArticle,
+  .trackList {
+    display: none;
+  }
+  .playerWrap {
+    display: none;
+  }
+  .mobilePlayList-wrapper {
+    display: flex;
+  }
+  .mobilePlayerWrapper {
+    display: flex;
+    min-width: 100%;
+  }
+}
