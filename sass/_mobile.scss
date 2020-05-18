@@ -10,7 +10,7 @@
     margin-top: 67px;
   }
   .header {
-    grid-template-columns: 137px 140px 247px 1px 87px 1px 87px 1px 87px 1px 235px;
+    grid-template-columns: 137px 140px 247px 87px 87px 87px 235px;
   }
   .burger-menu {
     position: relative;
@@ -177,6 +177,12 @@
   }
 }
 @media screen and (max-width: 500px) {
+  *{
+    opacity: 1!important;
+  }
+  .forHeaderBurger {
+  opacity:0!important;
+  }
   .logo,
   .searchbar,
   .header .hr,
@@ -193,7 +199,7 @@
     left: -15px;
   }
   .headerWrapper {
-    max-width: 0;
+    max-height: 1px;
   }
   .burger-first-line,
   .burger-second-line,
@@ -213,6 +219,100 @@
     max-width: 500px;
     min-width: 350px;
     overflow: hidden;
+  }
+  .burger-menu {
+    position: relative;
+    width: 100%;
+  }
+  .burger-menu {
+    display: block;
+    padding-left: 23px;
+    position: relative;
+  }
+  #header-burger:checked ~ .burger-first-line {
+    display: none;
+    z-index: 100;
+  }
+  #header-burger:checked ~ .burger-second-line {
+    transform: rotate(45deg);
+    z-index: 100;
+  }
+  #header-burger:checked ~ .burger-third-line {
+    transform: rotate(-45deg);
+    z-index: 100;
+  }
+  #header-burger:checked ~ .burger-forth-line {
+    display: none;
+    z-index: 100;
+  }
+  .header-burger-menu {
+    display: grid;
+    min-width: 100%;
+    left: 0;
+    transform: translateY(-120px);
+    background-color: #f51e38;
+    min-height: 0;
+    font-size: 0;
+    padding-top:100px;
+    padding-left: 23px;
+    padding-right: 10px;
+    transition: 0.5s all;
+    color: white;
+    z-index: 1;
+    overflow: scroll;
+    grid-template-columns: 1fr 1fr;
+  }
+  #header-burger:checked ~ .header-burger-menu {
+   min-height: 100%;
+  }
+  .mainMenu{
+    display: block;
+  }
+  .mainMenu .account {
+    display: flex;
+    align-items: center;
+    margin-top: 120px;
+    max-width: 60%;
+    margin-left: -23px!important;
+    padding:15px 44px 15px 23px;
+    background-color: #ffffff;
+    border-radius: 0 25px 25px  0 ;
+  }
+  
+  .account-info p {
+    font-size: 10px;
+    line-height: 10px;
+  }
+  .account-status {
+    display: flex;
+  }
+  .account-status p {
+    font-size: 10px;
+    line-height: 16px;
+    color: #3e2ad1;
+    padding: 0;
+  }
+  .status-crown {
+    padding-right: 5px;
+    align-self: center;
+  }
+  .photo {
+    flex: 1;
+    min-width: 50px;
+    margin-right: 14px;
+  }
+  .photo img {
+    max-width: 100%;
+  }
+  .account-info {
+    flex: 4;
+  }
+  .account-info a p {
+    color: black;
+    font-weight: bold;
+  }
+  .account-info a .statusInfo {
+    color: #3e2ad1;
   }
   .slick-slide img {
     width: 70%;
@@ -242,4 +342,25 @@
     display: flex;
     min-width: 100%;
   }
+ .first{
+  margin-top: 30px!important;
+}
+.signOut{
+  background-image: url(../images/Exit_.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  margin-bottom: 100px;
+  cursor: pointer;
+  opacity: 0.5!important;
+}
+.signOut:hover{
+  opacity: 1!important;
+}
+.rightSmallMenu{
+  max-height: 75%;
+  margin-top: 50%;
+  border-radius: 25px;
+  background-color: white;
+  box-shadow: -1px 4px 14px -3px #c0c0c0;
+}
 }

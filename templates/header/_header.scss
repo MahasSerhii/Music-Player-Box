@@ -1,3 +1,6 @@
+.headerWrapper *{
+  padding: 0;
+}
 .headerWrapper {
   display: flex;
   font-family: "Source Sans Pro", sans-serif;
@@ -5,12 +8,13 @@
   opacity: 0.9;
   position: fixed;
   z-index: 500;
+  min-width: 100%;
 }
 .header {
   display: grid;
   align-items: center;
-  height: 67px;
-  grid-template-columns: 164px 349px 1px 87px 1px 87px 1px 87px 1px 246px;
+  max-height: 67px;
+  grid-template-columns:169px 349px 87px 87px 87px 246px;
 }
 .burger-menu {
   display: none;
@@ -18,11 +22,9 @@
 .logo {
   margin-left: 20px;
   cursor: pointer;
-}
-.hr {
+  border-right: 2px solid #eeeeee;
   min-height: 100%;
-  opacity: 0.05;
-  border: 1px solid #0f1e36;
+  line-height: 67px;
 }
 form {
   display: flex;
@@ -49,21 +51,26 @@ form {
 }
 .tv-chanel {
   display: flex;
-  padding: 0px 20px;
-  line-height: 30px;
   justify-content: center;
+  border-right: 2px solid #eeeeee;
+  border-left: 2px solid #eeeeee;
+  min-height: 100%;
+  line-height: 67px;
 }
 .radio-chanel {
   display: flex;
-  padding: 0px 20px;
   line-height: 50px;
   justify-content: center;
+  border-right: 2px solid #eeeeee;
+  min-height: 100%;
+  line-height: 67px;
 }
 .notificatiom {
   display: flex;
-  padding: 0px 20px;
-  line-height: 50px;
   justify-content: center;
+  border-right: 2px solid #eeeeee;
+  min-height: 100%;
+  line-height: 67px;
 }
 .account {
   display: flex;
@@ -106,50 +113,42 @@ form {
 .account-info a .statusInfo {
   color: #3e2ad1;
 }
-.tv-chanel,
-.radio-chanel,
-.notificatiom {
-  padding: 15px 10px;
-}
 .tv-chanel {
-  padding: 10px;
   background: url(../images/TV.png);
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
 }
 .tv-chanel:hover {
-  padding: 10px;
   background: url(../images/TV-on.png);
   background-repeat: no-repeat;
   background-position: center;
   transform: scale(0.9);
 }
 .radio-chanel {
-  padding: 10px;
   background: url(../images/Radio.png);
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
 }
 .radio-chanel:hover {
-  padding: 10px;
   background: url(../images/Radio-on.png);
   background-repeat: no-repeat;
   background-position: center;
   transform: scale(0.9);
 }
 .notificatiom {
-  padding: 15px 10px;
   background: url(../images/Bell.png);
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
 }
 .notificatiom:hover {
-  padding: 15px 10px;
   background: url(../images/Bell-on.png);
   background-repeat: no-repeat;
   background-position: center;
   transform: scale(0.9);
+}
+.mainMenu{
+  display: none;
 }

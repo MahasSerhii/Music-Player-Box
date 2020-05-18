@@ -1,10 +1,13 @@
 .playlistWrapper {
   font-family: "Source Sans Pro", sans-serif;
 }
-.playlistTitle {
+h1 {
   margin-top: 23px;
   margin-left: 20px;
   font-weight: bolder;
+}
+.playlistWrapper:nth-child(3){
+  padding-top: 100px;
 }
 .playlistArticle {
   display: grid;
@@ -19,13 +22,11 @@
 }
 .trackList {
   display: grid;
-  width: 760px;
+  width: 100%;
   grid-template-columns: 50px 98px 143px 167px 105px 82px 50px 40px 20px;
   padding: 12px 16px 12px 16px;
   cursor: pointer;
   margin-left: 23px;
-}
-.trackList p {
   font-size: 12px;
   line-height: 16px;
   color: #0f1e36;
@@ -70,8 +71,9 @@
   background: white;
   box-shadow: -1px 4px 14px -3px #c0c0c0;
   opacity: 1;
+  width: 91%;
 }
-.trackList p:hover {
+.trackList div:hover {
   opacity: 1;
   color: #3e2ad1;
 }
@@ -79,7 +81,7 @@
   background: url(../images/VoiceRecorder.png);
   background-repeat: no-repeat;
 }
-.number:hover > p {
+.number:hover > span {
   display: none;
 }
 // mobile-screen>=350px
