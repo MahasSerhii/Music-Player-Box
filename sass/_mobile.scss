@@ -9,6 +9,12 @@
     min-height: 100%;
     margin-top: 67px;
   }
+  .mainMenu {
+    display: none;
+  }
+  .signOut {
+    display: none;
+  }
   .header {
     grid-template-columns: 137px 140px 247px 87px 87px 87px 235px;
   }
@@ -177,11 +183,11 @@
   }
 }
 @media screen and (max-width: 500px) {
-  *{
-    opacity: 1!important;
+  * {
+    opacity: 1 !important;
   }
   .forHeaderBurger {
-  opacity:0!important;
+    opacity: 0 !important;
   }
   .logo,
   .searchbar,
@@ -253,7 +259,7 @@
     background-color: #f51e38;
     min-height: 0;
     font-size: 0;
-    padding-top:100px;
+    padding-top: 100px;
     padding-left: 23px;
     padding-right: 10px;
     transition: 0.5s all;
@@ -263,9 +269,9 @@
     grid-template-columns: 1fr 1fr;
   }
   #header-burger:checked ~ .header-burger-menu {
-   min-height: 100%;
+    min-height: 100%;
   }
-  .mainMenu{
+  .mainMenu {
     display: block;
   }
   .mainMenu .account {
@@ -273,12 +279,12 @@
     align-items: center;
     margin-top: 120px;
     max-width: 60%;
-    margin-left: -23px!important;
-    padding:15px 44px 15px 23px;
+    margin-left: -23px !important;
+    padding: 15px 44px 15px 23px;
     background-color: #ffffff;
-    border-radius: 0 25px 25px  0 ;
+    border-radius: 0 25px 25px 0;
   }
-  
+
   .account-info p {
     font-size: 10px;
     line-height: 10px;
@@ -342,25 +348,25 @@
     display: flex;
     min-width: 100%;
   }
- .first{
-  margin-top: 30px!important;
-}
-.signOut{
-  background-image: url(../images/Exit_.png);
-  background-repeat: no-repeat;
-  background-position: left;
-  margin-bottom: 100px;
-  cursor: pointer;
-  opacity: 0.5!important;
-}
-.signOut:hover{
-  opacity: 1!important;
-}
-.rightSmallMenu{
-  max-height: 75%;
-  margin-top: 50%;
-  border-radius: 25px;
-  background-color: white;
-  box-shadow: -1px 4px 14px -3px #c0c0c0;
-}
+  .first {
+    margin-top: 30px !important;
+  }
+  .signOut {
+    background-image: url(../images/Exit_.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    margin-bottom: 100px;
+    cursor: pointer;
+    opacity: 0.5 !important;
+  }
+  .signOut:hover {
+    opacity: 1 !important;
+  }
+  .rightSmallMenu {
+    max-height: 75%;
+    margin-top: 50%;
+    border-radius: 25px;
+    background-color: white;
+    box-shadow: -1px 4px 14px -3px #c0c0c0;
+  }
 }

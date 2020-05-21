@@ -1,4 +1,4 @@
-.headerWrapper *{
+.headerWrapper * {
   padding: 0;
 }
 .headerWrapper {
@@ -14,7 +14,7 @@
   display: grid;
   align-items: center;
   max-height: 67px;
-  grid-template-columns:169px 349px 87px 87px 87px 246px;
+  grid-template-columns: 169px 349px 87px 87px 87px 246px;
 }
 .burger-menu {
   display: none;
@@ -148,7 +148,4 @@ form {
   background-repeat: no-repeat;
   background-position: center;
   transform: scale(0.9);
-}
-.mainMenu{
-  display: none;
 }
